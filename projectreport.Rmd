@@ -18,9 +18,10 @@ opts_chunk$set(
 ```
 
 ```{r, load data, echo=FALSE, message=FALSE, warning=FALSE}
+install.packages('readxl', repos='http://cran.us.r-project.org')
 library(readxl)
 here::i_am("README.md")
-data <-read_excel("~/data550/cptcodes.xlsx")
+data <- read_excel(file.path(here::here("data"), "cptcodes.xlsx"))
 ```
 
 # Descriptive Analysis

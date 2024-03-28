@@ -13,4 +13,5 @@ output/scatterplot.png: code/makefigure.R
 
 .phony: clean
 
-clean: rm output1/*.rds && rm -f output2/*.rds && rm -f output3/*.rds
+clean: 
+	rm output1/*.rds && rm -f output2/*.rds && rm -f output3/*.rds
