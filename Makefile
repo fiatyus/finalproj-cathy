@@ -1,4 +1,4 @@
-cpt.html: code/renderreport.R projectreport.Rmd 
+cpt.html: code/renderreport.R projectreport.Rmd output/table.rds output/scatterplot.png
 	Rscript code/renderreport.R
 
 #! TO DO:

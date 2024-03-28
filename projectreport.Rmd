@@ -19,6 +19,7 @@ opts_chunk$set(
 
 ```{r, load data, echo=FALSE, message=FALSE, warning=FALSE}
 library(readxl)
+here::i_am("README.md")
 data <-read_excel("~/data550/cptcodes.xlsx")
 ```
 
@@ -29,9 +30,11 @@ data <-read_excel("~/data550/cptcodes.xlsx")
 Characteristics, including the mean, maximum, and minimum reimbursement rates of the `r nrow(data)` different orthopedics CPT code rates for different insurance types in the state of Illinois are listed below.
 
 ```{r, table1}
-readRDS(
-  here::here("output/table.rds")
+table1 <- readRDS(
+  file=here::here("output/table.rds")
 )
+
+table1
 ```
 
 ## Graphical analysis
