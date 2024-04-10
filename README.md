@@ -25,3 +25,5 @@ The output contains the table and figure itself.
 -`projectreport.Rmd` reads in output from `output/` and cptcodes.xlsx and creates the report with the descriptive and graphical analysis
 
 -`code/renderreport.R` is used for rendering the report from the command line
+
+-to synchronize package repository with `renv::restore()`, run `make install` in the command line
