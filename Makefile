@@ -11,7 +11,12 @@ output/table.rds: code/maketable.R
 output/scatterplot.png: code/makefigure.R 
 	Rscript code/makefigure.R
 
+install:
+	Rscript -e "renv::restore(prompt=FALSE)"
+	
 .phony: clean
 
 clean: 
 	rm output1/*.rds && rm -f output2/*.rds && rm -f output3/*.rds
+	
+	
