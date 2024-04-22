@@ -27,3 +27,6 @@ The output contains the table and figure itself.
 -`code/renderreport.R` is used for rendering the report from the command line
 
 -to synchronize package repository with `renv::restore()`, run `make install` in the command line
+
+-to build and run the Docker image, run `make cpt.html/final_report', to run for a
+Mac/Linux-OS-specific target
