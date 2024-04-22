@@ -20,7 +20,7 @@ opts_chunk$set(
 ```{r, load data, echo=FALSE, message=FALSE, warning=FALSE}
 install.packages('readxl', repos='http://cran.us.r-project.org')
 library(readxl)
-here::i_am("README.md")
+here::i_am("code/maketable.R")
 data <- read_excel(file.path(here::here("data"), "cptcodes.xlsx"))
 ```
 

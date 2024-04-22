@@ -2,7 +2,7 @@ here::i_am("code/makefigure.R")
 
 library(readxl)
 
-data <-read_excel("~/data550/cptcodes.xlsx")
+data <-read_excel("data/cptcodes.xlsx")
 
 
 library(ggplot2)
