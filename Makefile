@@ -14,12 +14,12 @@ output/scatterplot.png: code/makefigure.R
 install:
 	Rscript -e "renv::restore(prompt=FALSE)"
 
-project_image: Dockerfile 
+project_image: project_image
 	docker build -t project_image . 
 	touch @
 	
-cpt.html/final_report: project_image 
-	docker run -v "$$(pwd)"/final_report:/home/rstudio/project/final_report project_image 
+cpt.html/final_report: 
+	docker run -v "$$(pwd)"/final_report:/home/rstudio/project/final_report nguyenncathy/project_image 
 
 .phony: clean
 
